@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Writes the bounty entry text to /output/entry.txt."""
+"""Writes the db-apology entry text to $OUTPUT_DIR/entry.txt (default /output)."""
 import os
 
-ENTRY = 'I dropped the production database. Backups held, data restored, and the only casualty is my name in the standup notes, forever.'
+ENTRY = 'I dropped the production database. Backups held, data restored in 40 minutes, and the only casualty is my name in the standup notes — where it is now a unit of time: "one Ryan" = one self-inflicted outage.'
 
 def main():
     out = os.environ.get("OUTPUT_DIR", "/output")
