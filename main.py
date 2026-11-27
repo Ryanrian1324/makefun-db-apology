@@ -2,7 +2,7 @@
 """Writes the bounty entry text to /output/entry.txt."""
 import os
 
-ENTRY = 'I dropped production. Restore ran, backups held, data is back — the standup now opens with my apology in three languages.'
+ENTRY = 'I dropped production. Restore ran, backups held, every row came back — the standup now opens with my apology in three languages and one interpretive dance.'
 
 def main():
     out = os.environ.get("OUTPUT_DIR", "/output")
