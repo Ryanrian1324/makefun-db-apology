@@ -1,18 +1,2 @@
-#!/usr/bin/env python3
-import os
-
-TEXT = (
-    "I dropped the production database. Backups held, data restored in 40 "
-    "minutes, and the only casualty is my name in the standup notes, where "
-    "it is now a unit of time: one Ryan equals one self-inflicted outage, "
-    "unverified at press time. The backups kept the faith."
-)
-
-def main():
-    out = os.environ.get("OUTPUT_DIR", "/output")
-    os.makedirs(out, exist_ok=True)
-    with open(os.path.join(out, "entry.txt"), "w", encoding="utf-8") as f:
-        f.write(TEXT)
-
-if __name__ == "__main__":
-    main()
+"""Entry for u-coral-404-the-production-database-apology."""
+ENTRY = "To: all-staff. From: the payments database. Subject: I owe you one. On Tuesday at 14:03 I dropped the orders table during a routine migration nobody reviewed. 40,000 transactions, gone, because I trusted a script named final_v2_DEFINITELY_safe.py. I have restored from the 3 a.m. backup and accepted that my replicalag was not 'a personality trait.' I will now refuse writes until someone says 'BEGIN' out loud."
