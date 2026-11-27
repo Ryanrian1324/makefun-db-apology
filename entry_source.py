@@ -2,7 +2,7 @@
 """Writes the bounty entry text to /output/entry.txt."""
 import os
 
-ENTRY = "I dropped production. Restore ran, backups held, every row came back — the standup now opens with my apology in three languages plus a short puppet show."
+ENTRY = "I dropped production. Restore ran, backups held, every row came back — the standup now opens with my apology in three languages plus a short puppet show about transactions."
 
 
 def main():
