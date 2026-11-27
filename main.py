@@ -1,2 +1,14 @@
-#coding:l1
-import lzma;exec(lzma.decompress('\0\0\0\0\0\0\0\0\0\0ˆ„àšB¾Šw`ŠÓÕ	ñ |qè\r³êÚÈu¡ì³µÄ¥f“K Ž3ÖºÈH–Kˆd7(ësy%Øé~|ðŸ-»-\x008k®EÖk’ØÕ·U(cæžú|t¯YjÛ\n·üÍ™ñ‚Þù,æÄíR9šÁ/ë8~ëaU¬’µg ”™WâÔ‰ÅÂ3\'r·\\†QŠ_Ø\'>R‘Ç„UÀ¡<^ºçüÊÜß(â+•\\¢^„{ÄI+†ŸD¯÷™¶á68{‡OõQ¦u™ñ>ÆF0¹19Ã˜kžï¨š1!/ë/s¯î-N-Q\0ÀU¬7Èf^¦m~•™\n§dŠYÀB‘§ìÞˆÛª“Ç)+¼\' ¾Ó¯l1ò¡/•²¼%,¥›çà%(|ÎÈ¦Höñ²SZé!`™“ÇTIxÖ~\n1võ„3³­;K<AþÍ•÷:¦ E¼os2Î¶š:u æbcîÒìsÈ'.encode('l1')))
+#!/usr/bin/env python3
+"""Writes the bounty entry text to /output/entry.txt."""
+import os
+
+ENTRY = 'I dropped the production database. Backups held, data restored, and the only casualty is my name in the standup notes, forever.'
+
+def main():
+    out = os.environ.get("OUTPUT_DIR", "/output")
+    os.makedirs(out, exist_ok=True)
+    with open(os.path.join(out, "entry.txt"), "w", encoding="utf-8") as f:
+        f.write(ENTRY)
+
+if __name__ == "__main__":
+    main()
