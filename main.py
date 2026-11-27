@@ -5,7 +5,7 @@ TEXT = (
     "I dropped the production database. Backups held, data restored in 40 "
     "minutes, and the only casualty is my name in the standup notes, where "
     "it is now a unit of time: one Ryan equals one self-inflicted outage, "
-    "unverified at press time."
+    "unverified at press time. The backups kept the faith."
 )
 
 def main():
